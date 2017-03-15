@@ -7,7 +7,6 @@ Instructions:
 In the script below, replace each comment 1) - 10) with a single line of code each. The resulting output should match the sample output in the block comment. (The final line of output may vary). When you get the correct results, upload your finished code to the Dropbox. 
 
  
-<!--
 -------------------------------- Code to Finish -------------------------------------
 
 <!DOCTYPE html>
@@ -72,4 +71,3 @@ Seattle,Federal Way,Sumner,Puyallup,Everett,Tukwila,Bellevue
 
 </body>
 </html>
--->
