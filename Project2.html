@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<p id="demo"></p>
+
+<script>
+var output = "";
+var KingCo = ["Seattle", "Bellevue", "Kirkland", "Mercer Island"];
+
+var PierceCo = ["Tacoma", "Sumner", "Puyallup"]	//1) define a new array called PierceCo with elements "Tacoma", "Sumner", "Puyallup"
+console.log(PierceCo)
+
+	
+var Metro = KingCo.concat(PierceCo);	//2) Combine PierceCo with KingCo to make a new array called Metro
+console.log(Metro)
+output+=Metro.toString() + "<br>";
+
+
+
+Metro.push("Everett");	//3)Put "Everett" on the ride hand end of Metro
+console.log(Metro)
+output+=Metro.toString() + "<br>";
+
+
+
+Metro.unshift("Federal Way");//4) Put Federal Way on the left hand end of Metro
+console.log(Metro)
+output+=Metro.toString() + "<br>";
+
+
+
+Metro.sort();	//5) Alphabetize Metro
+console.log(Metro)
+output+=Metro.toString() + "<br>";
+
+
+
+Metro.pop();//6) Revome the last element on the right hand side of Metro
+console.log(Metro)
+output+=Metro.toString() + "<br>";
+
+
+
+Metro.splice(3, 2, "Tukwila");	//7) Replace Kirkland and Mercer Island with Tukwila
+console.log(Metro)
+output+=Metro.toString() + "<br>";
+
+
+
+Metro.reverse();	//8) Place Metro into reverse alphabetical order
+console.log(Metro)
+output+=Metro.toString() + "<br>";
+
+
+
+Metro.sort(function(a, b){return 0.5 - Math.random()});
+//9) Sort Metro at random
+console.log(Metro)
+output+=Metro.toString() + "<br>";
+
+
+document.getElementById("demo").innerHTML =	output;
+
+
+
+/* Not quite there yet.
+
+
+function errorCheck(){
+
+	var outputArray = output.str.split(",");
+	for(i = 0; i > Metro.length; i++){
+		pop()
+	}
+
+	if(Metro.toString() == "Seattle,Bellevue,Kirkland,Mercer Island,Tacoma,Sumner,Puyallup,Seattle,Bellevue,Kirkland,Mercer Island,Tacoma,Sumner,Puyallup,Everett,Federal Way,Seattle,Bellevue,Kirkland,Mercer Island,Tacoma,Sumner,Puyallup,Everett Bellevue,Everett,Federal Way,Kirkland,Mercer Island,Puyallup,Seattle,Sumner,Tacoma,Bellevue,Everett,Federal Way,Kirkland,Mercer Island,Puyallup,Seattle,Sumner, Bellevue,Everett,Federal Way,Tukwila,Puyallup,Seattle,Sumner,Tukwila,Sumner,Seattle,Puyallup,Federal Way,Everett,Bellevue"){
+		alert(output correctly matches the sample text.)
+	}
+}
+
+errorCheck()
+*/
+
+
+</script>
+</body>
+</html>
